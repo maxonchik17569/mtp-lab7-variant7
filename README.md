@@ -53,3 +53,11 @@ uv run --with sqlalchemy --with fastapi --with httpx python -m lab7
 Зависимости для CI перечислены в `requirements-dev.txt`, настройки
 стиля — в `setup.cfg`. Подробное описание выполнения — в
 `docs/report.md`.
+
+## Требования
+
+- Python 3.13 или новее.
+- [uv](https://docs.astral.sh/uv/) для запуска без ручной установки
+  зависимостей.
+- SQLAlchemy, FastAPI и httpx ставятся командами `uv run --with`.
+- `flake8` ставится автоматически командой `uv run --with flake8`.
